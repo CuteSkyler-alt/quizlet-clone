@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuizletClone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Quizlet</h1>
+    </header>
+    <main>
+        <div id="model">
+            <textarea placeholder="Pa's wijze lynx bezag vroom het fikse aquaduct."></textarea>
+            <div id="info">
+                <p>Gebruik <b>", "definitie": "</b> voor tussen termen en definities. En gebruik <b>"},\n{"woord": "</b> voor tussen regels in. Vergeet niet om nog <b>{"woord": "</b> ervoor te plaatsen, en <b>"},\n{"woord": "</b> erachter weg te halen.</p>
+            </div>
+            <div id="submitting">
+                <button id="submit-submit" onclick="useInput();">Submit</button>
+            </div>
+        </div>
+        <div id="content">
+            <div id="text">
+                <span></span>
+                <p></p>
+            </div>
+            <div id="form">
+                <form>
+                    <div id="input">
+                        <input type="text" id="text" required autocomplete="off">
+                        <label>Antwoord</label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="details">
+                <div id="bar"></div>
+                <p id="total"></p>
+                <p id="percent"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Copyright lolololol ©2022</p>
+    </footer>
+</body>
+</html>
