@@ -44,8 +44,8 @@ function randomWord(){
 };
 
 function checkWord(word){
-    let sent = word.replace(/(, m\/v)|(, m)|(, v)|\(.+?\)/g, '');
-    let received = gebruiken[randomNumber].definitie.replace(/(, m\/v)|(, m)|(, v)|\(.+?\)/g, ''); 
+    let sent = word.replace(/(,m\/v)|(, m)|(, v)|\(.+?\)|\./g, '');
+    let received = gebruiken[randomNumber].definitie.replace(/(,m\/v)|(, m)|(, v)|\(.+?\)|\./g, ''); 
     if(sent === received){
         input.classList.add('correct');
         submit.classList.add('correct');
