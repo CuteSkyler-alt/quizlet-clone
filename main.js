@@ -20,7 +20,7 @@ let total = 0;
 function setBar(){
     if(total > leren.length){total = 0; correct = 0;};
     bar.style.background = `linear-gradient(90deg, rgba(0,255,0,1) ${correct / total * 100}%, rgba(255,0,0,1) ${correct / total * 100}%)`;
-    ptotal.innerText = `${total}/${leren.length}`;
+    ptotal.innerText = `${correct}/${total} (${leren.length})`;
     ppercent.innerText = `${Math.ceil(correct / total * 100) || 0}%`;
     return;
 };
